@@ -7,7 +7,7 @@ const Footer = () => {
       {/* Social Media Icons  */}
       <div className="flex justify-center space-x-6 mb-6">
         <a
-          href="https://github.com/ashishrawat008575"
+          href="https://github.com/roshan656/roshan656"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-yellow-400 transition-colors duration-300 text-2xl"
@@ -15,7 +15,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/ashish-singh-430862202/"
+          href="https://www.linkedin.com/in/roshansinghbisht/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-blue-400 transition-colors duration-300 text-2xl"
@@ -23,7 +23,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://wa.me/6399896102"
+          href="https://wa.me/7820030940"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-blue-500 transition-colors duration-300 text-2xl"
@@ -34,7 +34,7 @@ const Footer = () => {
 
       {/* Footer Text  */}
       <p className="text-sm text-gray-300">
-        © 2025 roshan singh Bishts. All Rights Reserved.
+        © 2025 Roshan singh. All Rights Reserved.
       </p>
     </footer>
   );

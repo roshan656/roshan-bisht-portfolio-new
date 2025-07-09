@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
@@ -12,6 +12,11 @@ const ContactSection = () => {
     message: "",
   });
 
+  // ✅ Initialize EmailJS on component load
+  useEffect(() => {
+    emailjs.init("GZXCfdPwl94xfjIGo"); // ⚠️ Replace with your actual public key
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -19,17 +24,17 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Check if all fields are filled
     if (!formData.name || !formData.email || !formData.message) {
-      toast.error("Please fill in all fields!");
+      toast.error("Please fill in all fields! 🙏");
       return;
     }
 
     try {
       await emailjs.send(
-        "service_4cedc8h",
-        "template_94e3z26",
-        formData,
-        "4Z4LsmvrQc6RE4Gnt"
+        "service_shesu5b", // ⚠️ Replace with your actual service ID
+        "template_c5l93ck", // ⚠️ Replace with your actual template ID
+        formData
       );
       toast.success("Thank you! Message sent successfully 🚀");
       setFormData({ name: "", email: "", message: "" });
@@ -75,7 +80,7 @@ const ContactSection = () => {
               CONTACT
             </h2>
             <a
-              href="mailto:ashishrwat008575@gmail.com"
+              href="mailto:roshansinghbisht256@gmail.com"
               className="text-blue-400 hover:underline transition duration-200 break-all"
             >
               roshansinghbisht256@gmail.com
@@ -84,27 +89,26 @@ const ContactSection = () => {
 
           <div className="flex flex-wrap gap-6 text-3xl">
             <a
-              href="https://www.linkedin.com/in/ashish-singh-430862202/"
+              href="https://www.linkedin.com/in/roshansinghbisht/"
               target="_blank"
-              className="text-[#0077B5] hover:scale-110 transition duration-300"
               rel="noreferrer"
+              className="text-[#0077B5] hover:scale-110 transition duration-300"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/ashishrawat008575"
+              href="https://github.com/roshan656/roshan656"
               target="_blank"
-              className="text-[#4267B2] hover:scale-110 transition duration-300"
               rel="noreferrer"
+              className="text-[#4267B2] hover:scale-110 transition duration-300"
             >
               <FaGithub />
             </a>
-
             <a
-              href="https://wa.me/6399896102"
+              href="https://wa.me/7820030940"
               target="_blank"
-              className="text-[#25D366] hover:scale-110 transition duration-300"
               rel="noreferrer"
+              className="text-[#25D366] hover:scale-110 transition duration-300"
             >
               <FaWhatsapp />
             </a>

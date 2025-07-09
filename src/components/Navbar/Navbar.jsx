@@ -1,23 +1,53 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 import {
   FaUser,
   FaCode,
   FaHome,
   FaProjectDiagram,
   FaEnvelope,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const Navbar = () => {
-  const [active, setActive] = useState('home');
+  const [active, setActive] = useState("home");
 
   const navItems = [
-    { id: 'home', path: '/', icon: FaHome, label: 'Home', gradient: 'from-pink-500 to-yellow-400' },
-    { id: 'about', path: '/about', icon: FaUser, label: 'About', gradient: 'from-blue-500 to-cyan-400' },
-    { id: 'skills', path: '/skills', icon: FaCode, label: 'Skills', gradient: 'from-green-500 to-lime-400' },
-    { id: 'projects', path: '/projects', icon: FaProjectDiagram, label: 'Projects', gradient: 'from-purple-500 to-pink-400' },
-    { id: 'contact', path: '/contact', icon: FaEnvelope, label: 'Contact', gradient: 'from-red-500 to-orange-400' },
+    {
+      id: "home",
+      path: "/",
+      icon: FaHome,
+      label: "Home",
+      gradient: "from-pink-500 to-yellow-400",
+    },
+    {
+      id: "about",
+      path: "/about",
+      icon: FaUser,
+      label: "About",
+      gradient: "from-blue-500 to-cyan-400",
+    },
+    {
+      id: "skills",
+      path: "/skills",
+      icon: FaCode,
+      label: "Skills",
+      gradient: "from-green-500 to-lime-400",
+    },
+    {
+      id: "projects",
+      path: "/projects",
+      icon: FaProjectDiagram,
+      label: "Projects",
+      gradient: "from-purple-500 to-pink-400",
+    },
+    {
+      id: "contact",
+      path: "/contact",
+      icon: FaEnvelope,
+      label: "Contact",
+      gradient: "from-red-500 to-orange-400",
+    },
   ];
 
   return (
@@ -31,7 +61,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="text-white font-extrabold text-xl md:text-2xl tracking-wide drop-shadow-md">
-          ASHISH RAWAT
+          Roshan Singh
         </div>
 
         {/* Desktop Nav Links */}
@@ -53,7 +83,7 @@ const Navbar = () => {
                   className={`flex items-center gap-1 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full transition-all duration-300 group text-sm md:text-base ${
                     isActive
                       ? `bg-gradient-to-r ${item.gradient} text-white`
-                      : 'hover:bg-white/10'
+                      : "hover:bg-white/10"
                   }`}
                   role="button"
                   aria-label={`Navigate to ${item.label}`}
@@ -61,7 +91,7 @@ const Navbar = () => {
                   <div
                     className={`text-lg md:text-xl ${
                       isActive
-                        ? 'text-white'
+                        ? "text-white"
                         : `text-transparent bg-gradient-to-r ${item.gradient} bg-clip-text`
                     }`}
                   >
@@ -69,7 +99,9 @@ const Navbar = () => {
                   </div>
                   <span
                     className={`font-semibold ${
-                      isActive ? 'text-white' : 'text-gray-300 group-hover:text-white'
+                      isActive
+                        ? "text-white"
+                        : "text-gray-300 group-hover:text-white"
                     }`}
                   >
                     {item.label}
@@ -108,7 +140,7 @@ const Navbar = () => {
               {/* Base icon always shown */}
               <div
                 className={`text-lg transition z-20 ${
-                  isActive ? 'opacity-0' : 'text-white'
+                  isActive ? "opacity-0" : "text-white"
                 }`}
               >
                 <Icon />
@@ -117,7 +149,7 @@ const Navbar = () => {
               {/* Label always visible for accessibility */}
               <span
                 className={`text-[10px] mt-1 font-medium transition-all ${
-                  isActive ? 'text-white' : 'text-gray-400'
+                  isActive ? "text-white" : "text-gray-400"
                 }`}
               >
                 {item.label}
