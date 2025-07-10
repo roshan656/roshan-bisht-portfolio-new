@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import immigrationImg from "../../assets/ProjectsImg/immigration.png";
-import DelishLicksImg from "../../assets/ProjectsImg/Delish-LicksImg.png";
+import roshanPortFolio from "../../assets/ProjectsImg/roshanPortfolio.png";
 import BhagwaticatererImg from "../../assets/ProjectsImg/BhagwaticatererImg.png";
 import fetureTech from "../../assets/ProjectsImg/fetureTech.png";
 import ShabrigardensbistroImg from "../../assets/ProjectsImg/ShabrigardensbistroImg.png";
@@ -18,11 +18,11 @@ const projects = [
     tech: ["React", "Framer Motion", "Tailwind"],
   },
   {
-    title: "Delish Licks – Gourmet Restaurant",
+    title: "Roshan portFolio",
     description:
       "A modern and vibrant restaurant website offering delicious food, shakes, and an immersive gaming experience. Built with smooth animations, responsive design, and engaging UI for users to explore menu, play zone, and connect easily.",
-    link: "https://www.delish-licks.com/",
-    image: DelishLicksImg,
+    link: "https://roshan-bisht-portfolio-new.vercel.app//",
+    image: roshanPortFolio,
     tech: ["React", "Tailwind", "Framer Motion", "React Scroll"],
   },
 
