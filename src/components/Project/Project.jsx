@@ -46,7 +46,7 @@ const projects = [
     title: "Feture Tech",
     description:
       "A user-friendly platform showcasing immigration services, client consultations, and document management with secure payment integration.",
-    link: "https://dashboard-design-kohl-two.vercel.app/",
+    link: "https://future-tech-sooty.vercel.app/",
     image: fetureTech,
     tech: ["JavaScript", "React", "Tailwind CSS", "Animation"],
   },
