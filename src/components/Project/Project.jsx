@@ -5,7 +5,7 @@ import immigrationImg from "../../assets/ProjectsImg/immigration.png";
 import roshanPortFolio from "../../assets/ProjectsImg/roshanPortfolio.png";
 import BhagwaticatererImg from "../../assets/ProjectsImg/BhagwaticatererImg.png";
 import fetureTech from "../../assets/ProjectsImg/fetureTech.png";
-import ShabrigardensbistroImg from "../../assets/ProjectsImg/ShabrigardensbistroImg.png";
+import shoesImage from "../../assets/ProjectsImg/shoesImage.png";
 
 // Project Data
 const projects = [
@@ -35,11 +35,11 @@ const projects = [
     tech: ["JavaScript", "React", "Tailwind CSS", "Animation"],
   },
   {
-    title: "Shabrigardensbistroltd",
+    title: "Shoes website",
     description:
       "A user-friendly platform showcasing immigration services, client consultations, and document management with secure payment integration.",
-    link: "https://shabrigardensbistroltd.vercel.app/",
-    image: ShabrigardensbistroImg,
+    link: "https://roshan-shoes.vercel.app/",
+    image: shoesImage,
     tech: ["Framer Motion", "React", "Tailwind CSS"],
   },
   {
