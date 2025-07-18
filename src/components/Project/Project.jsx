@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import immigrationImg from "../../assets/ProjectsImg/immigration.png";
 import roshanPortFolio from "../../assets/ProjectsImg/roshanPortfolio.png";
-import BhagwaticatererImg from "../../assets/ProjectsImg/BhagwaticatererImg.png";
+import jurisNexa from "../../assets/ProjectsImg/jurisnexaImmigration.png";
 import fetureTech from "../../assets/ProjectsImg/fetureTech.png";
 import shoesImage from "../../assets/ProjectsImg/shoesImage.png";
 
@@ -27,14 +27,6 @@ const projects = [
   },
 
   {
-    title: "Bhagwati Caterer",
-    description:
-      "A responsive catering website showcasing menus, customizable event packages, and easy booking, built with React, Redux, and Tailwind for smooth user experience, event planning convenience, and reliable service management.",
-    link: "https://bhagwaticatererltd.vercel.app/",
-    image: BhagwaticatererImg,
-    tech: ["JavaScript", "React", "Tailwind CSS", "Animation"],
-  },
-  {
     title: "Shoes website",
     description:
       "A user-friendly platform showcasing immigration services, client consultations, and document management with secure payment integration.",
@@ -48,6 +40,14 @@ const projects = [
       "A user-friendly platform showcasing immigration services, client consultations, and document management with secure payment integration.",
     link: "https://future-tech-sooty.vercel.app/",
     image: fetureTech,
+    tech: ["JavaScript", "React", "Tailwind CSS", "Animation"],
+  },
+  {
+    title: "JurisNexa Immigration",
+    description:
+      "A responsive catering website showcasing menus, customizable event packages, and easy booking, built with React, Redux, and Tailwind for smooth user experience, event planning convenience, and reliable service management.",
+    link: "https://jurisnexa-immigration.vercel.app/",
+    image: jurisNexa,
     tech: ["JavaScript", "React", "Tailwind CSS", "Animation"],
   },
 ];
